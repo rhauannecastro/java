@@ -1,0 +1,181 @@
+     // Faça um Programa que mostre a mensagem "Alo mundo" na tela. 
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.println("Olá Mundo");
+	}
+}
+   //Faça um Programa que peça um número e então mostre a mensagem O número informado foi [número].
+import java.util.Scanner;
+
+public class Main{
+
+  public static void main(String[] args) {
+    System.out.println("Digite um número: ");
+    Scanner s = new Scanner(System.in);
+    int numero = s.nextInt();
+    System.out.println("O número digitado foi: " + numero);
+  }
+
+}
+
+   //Faça um Programa que peça dois números e imprima a soma. 
+
+import java.util.Scanner;
+
+public class Main{
+     public static void main( String[] args ) {
+         
+     Scanner entrada = new Scanner(System.in);
+        int num1;
+        int num2;
+        int soma;
+ System.out.print("Digite um número: ");
+        num1 = entrada.nextInt();
+
+        System.out.print("Digite outro número: ");
+        num2 = entrada.nextInt();
+
+        soma = num1 + num2;
+
+        System.out.println("O resultado é: " + soma );
+
+
+   }
+ 
+}
+
+      //Faça um Programa que peça as 4 notas bimestrais e mostre a média. 
+
+import java.util.Scanner;
+
+public class Main{
+     public static void main( String[] args ) {
+         
+     Scanner entrada = new Scanner(System.in);
+        int num1;
+        int num2;
+        int num3;
+        int num4;
+        int soma;
+        int media; 
+        
+        System.out.print("Digite a primeira nota: ");
+        num1 = entrada.nextInt();
+
+        System.out.print("Digite  a segunda nota: ");
+        num2 = entrada.nextInt();
+        
+        System.out.print("Digite  a terceira nota: ");
+        num3 = entrada.nextInt();
+        
+        System.out.print("Digite  a quarta nota: ");
+        num4 = entrada.nextInt();
+
+        soma = num1 + num2 + num3 + num4;
+        
+       media = soma / 4;
+        
+        System.out.println("sua média é:" + media );
+        
+        if (media >= 6) 
+        System.out.println("aprovado");
+        
+        else if (media <= 5)
+        System.out.println("Reprovado");
+
+   }
+ 
+}
+
+     //Faça um Programa que converta metros para centímetros. 
+import java.util.Scanner;
+
+public class Main{
+     public static void main( String[] args ) {
+         
+     Scanner entrada = new Scanner(System.in);
+        int num1;
+        int conversao; 
+        
+        System.out.print("Digite o tamanho em metros: ");
+        num1 = entrada.nextInt();
+        
+       conversao = num1*100 ;
+        System.out.println("O resultado é:" + conversao);
+
+   }
+ 
+}	
+
+       //Faça um Programa que peça o raio de um círculo, calcule e mostre sua área. 
+import java.util.Scanner;
+
+public class Main{
+     public static void main( String[] args ) {
+         
+     Scanner entrada = new Scanner(System.in);
+        double raio;
+        double area; 
+         final double PI = 3.14;
+    
+        System.out.print("Digite o raio do círculo: ");
+        raio = entrada.nextInt();
+        
+       area = PI*(raio*raio);
+       
+        System.out.println("A área do círculo é:" + area);
+
+   }
+ 
+}
+ 
+       //Faça um Programa que calcule a área de um quadrado, em seguida mostre o dobro desta área para o usuário. 
+import java.util.Scanner;
+
+public class Main{
+     public static void main( String[] args ) {
+         
+     Scanner entrada = new Scanner(System.in);
+        int lado;
+        int area; 
+        int dobro;
+        
+        System.out.print("Digite o valor do lado do quadrado: ");
+        lado = entrada.nextInt();
+        
+        area = lado*lado;
+        System.out.println("A área do quadrado é:" + area);
+        
+        dobro = area*area;
+        System.out.println("O dobro da área é:" + dobro);
+
+   }
+ 
+}
+
+        //Faça um Programa que pergunte quanto você ganha por hora e o número de horas trabalhadas no mês. Calcule e mostre o total do seu salário no referido mês. import java.util.Scanner;
+
+import java.util.Scanner;
+
+public class Main{
+     public static void main( String[] args ) {
+         
+     Scanner entrada = new Scanner(System.in);
+     
+        int valorhora;
+        int horaspormes;
+        int salario;
+        
+        System.out.print("Digite o valor da hora trabalhada: ");
+        valorhora = entrada.nextInt();
+        
+        System.out.print("Digite a hora trabalhada por mês: ");
+        horaspormes = entrada.nextInt();
+        
+        salario = valorhora*horaspormes;
+        System.out.println("A seu salário é:" + salario);
+
+   }
+ 
+}
